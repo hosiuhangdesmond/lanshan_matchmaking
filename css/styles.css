@@ -1,0 +1,209 @@
+/* ============================== */
+/* global variables: colors */
+/* ============================= */
+/* (1) 主色-鼠尾草绿(#8FAF9F): */
+:root {
+  /* light shade */
+    --clr-primary-0: #f0f4f2;
+    --clr-primary-1: #e1eae6;
+    --clr-primary-2: #c3d5cc;
+    --clr-primary-3: #a5c0b3;
+    --clr-primary-4: #88aa99;
+    /* main color-鼠尾草绿 */
+    --clr-primary-5: #8FAF9F;
+    /* dark shade */
+    --clr-primary-6: #6a9580;
+    --clr-primary-7: #557766;
+    --clr-primary-8: #3f5a4d;
+    --clr-primary-9: #2a3c33;
+    --clr-primary-10: #151e1a;
+    --clr-primary-11: #0f1512;
+    /* greys */
+    --clr-grey-primary-1: hsla(150, 17%, 50%);
+    --clr-grey-primary-2: hsla(150, 17%, 50%, 0.9);
+    --clr-grey-primary-3: hsla(150, 17%, 50%, 0.8);
+    --clr-grey-primary-4: hsla(150, 17%, 50%, 0.7);
+    --clr-grey-primary-5: hsla(150, 17%, 50%, 0.6);
+    --clr-grey-primary-6: hsla(150, 17%, 50%, 0.5);
+    --clr-grey-primary-7: hsla(150, 17%, 50%, 0.4);
+    --clr-grey-primary-8: hsla(150, 17%, 50%, 0.3);
+    --clr-grey-primary-9: hsla(150, 17%, 50%, 0.2);
+    --clr-grey-primary-10: hsla(150, 17%, 50%, 0.1);
+}
+/* (2) 副色-豆沙玫瑰(#C98A8A): */
+:root {
+  /* light shade */
+    --clr-secondary-0: #f7eeee;
+    --clr-secondary-1: #efdcdc;
+    --clr-secondary-2: #dfb9b9;
+    --clr-secondary-3: #cf9696;
+    --clr-secondary-4: #bf7373;
+    /* main color-豆沙玫瑰 */
+    --clr-secondary-5: #C98A8A;
+    /* dark shade */
+    --clr-secondary-6: #af5050;
+    --clr-secondary-7: #8c4040;
+    --clr-secondary-8: #693030;
+    --clr-secondary-9: #462020;
+    --clr-secondary-10: #231010;
+    --clr-secondary-11: #180b0b;
+    /* greys */
+    --clr-grey-secondary-1: hsla(0, 37%, 50%);
+    --clr-grey-secondary-2: hsla(0, 37%, 50%, 0.9);
+    --clr-grey-secondary-3: hsla(0, 37%, 50%, 0.8);
+    --clr-grey-secondary-4: hsla(0, 37%, 50%, 0.7);
+    --clr-grey-secondary-5: hsla(0, 37%, 50%, 0.6);
+    --clr-grey-secondary-6: hsla(0, 37%, 50%, 0.5);
+    --clr-grey-secondary-7: hsla(0, 37%, 50%, 0.4);
+    --clr-grey-secondary-8: hsla(0, 37%, 50%, 0.3);
+    --clr-grey-secondary-9: hsla(0, 37%, 50%, 0.2);
+    --clr-grey-secondary-10: hsla(0, 37%, 50%, 0.1);
+}
+/* (3) 对比色-深海军蓝(#1F3A5F): */
+:root {
+  /* light shade */
+    --clr-contrast-0: #ecf1f9;
+    --clr-contrast-1: #d8e3f3;
+    --clr-contrast-2: #b2c8e6;
+    --clr-contrast-3: #8bacda;
+    --clr-contrast-4: #6590cd;
+    /* main color-深海军蓝 */
+    --clr-contrast-5: #1F3A5F;
+    /* dark shade */
+    --clr-contrast-6: #3e75c1;
+    --clr-contrast-7: #325d9a;
+    --clr-contrast-8: #254674;
+    --clr-contrast-9: #192f4d;
+    --clr-contrast-10: #0c1727;
+    --clr-contrast-11: #09101b;
+    /* greys */
+    --clr-grey-contrast-1: hsla(215, 51%, 50%);
+    --clr-grey-contrast-2: hsla(215, 51%, 50%, 0.9);
+    --clr-grey-contrast-3: hsla(215, 51%, 50%, 0.8);
+    --clr-grey-contrast-4: hsla(215, 51%, 50%, 0.7);
+    --clr-grey-contrast-5: hsla(215, 51%, 50%, 0.6);
+    --clr-grey-contrast-6: hsla(215, 51%, 50%, 0.5);
+    --clr-grey-contrast-7: hsla(215, 51%, 50%, 0.4);
+    --clr-grey-contrast-8: hsla(215, 51%, 50%, 0.3);
+    --clr-grey-contrast-9: hsla(215, 51%, 50%, 0.2);
+    --clr-grey-contrast-10: hsla(215, 51%, 50%, 0.1);
+}
+/* (4) 辅助色-雾蓝(#A9C0CF): */
+:root {
+    /* light shade */
+    --clr-accentA-0: #eff3f6;
+    --clr-accentA-1: #dee7ed;
+    --clr-accentA-2: #becfda;
+    --clr-accentA-3: #9db7c8;
+    --clr-accentA-4: #7c9fb6;
+    /* main color-雾蓝 */
+    --clr-accentA-5: hsl(204, 28%, 74%);
+    /* dark shade */
+    --clr-accentA-6: #5c87a3;
+    --clr-accentA-7: #496c83;
+    --clr-accentA-8: #375162;
+    --clr-accentA-9: #253641;
+    --clr-accentA-10: #121b21;
+    --clr-accentA-11: #0d1317;
+    /* greys */
+    --clr-grey-accentA-1: hsla(204, 28%, 50%);
+    --clr-grey-accentA-2: hsla(204, 28%, 50%, 0.9);
+    --clr-grey-accentA-3: hsla(204, 28%, 50%, 0.8);
+    --clr-grey-accentA-4: hsla(204, 28%, 50%, 0.7);
+    --clr-grey-accentA-5: hsla(204, 28%, 50%, 0.6);
+    --clr-grey-accentA-6: hsla(204, 28%, 50%, 0.5);
+    --clr-grey-accentA-7: hsla(204, 28%, 50%, 0.4);
+    --clr-grey-accentA-8: hsla(204, 28%, 50%, 0.3);
+    --clr-grey-accentA-9: hsla(204, 28%, 50%, 0.2);
+    --clr-grey-accentA-10: hsla(204, 28%, 50%, 0.1);
+}
+/* (5) 辅助色-暖金(#D9A066): */
+:root {
+    /* light shade */
+    --clr-accentB-0: #faf2eb;
+    --clr-accentB-1: #f5e6d6;
+    --clr-accentB-2: #ebccad;
+    --clr-accentB-3: #e0b385;
+    --clr-accentB-4: #d6995c;
+    /* main color-暖金 */
+    --clr-accentB-5: #D9A066;
+    /* dark shade */
+    --clr-accentB-6: #cc8033;
+    --clr-accentB-7: #a36629;
+    --clr-accentB-8: #7a4d1f;
+    --clr-accentB-9: #523314;
+    --clr-accentB-10: #291a0a;
+    --clr-accentB-11: #1d1207;
+    /* greys */
+    --clr-grey-accentB-1: hsla(30, 60%, 50%);
+    --clr-grey-accentB-2: hsla(30, 60%, 50%, 0.9);
+    --clr-grey-accentB-3: hsla(30, 60%, 50%, 0.8);
+    --clr-grey-accentB-4: hsla(30, 60%, 50%, 0.7);
+    --clr-grey-accentB-5: hsla(30, 60%, 50%, 0.6);
+    --clr-grey-accentB-6: hsla(30, 60%, 50%, 0.5);
+    --clr-grey-accentB-7: hsla(30, 60%, 50%, 0.4);
+    --clr-grey-accentB-8: hsla(30, 60%, 50%, 0.3);
+    --clr-grey-accentB-9: hsla(30, 60%, 50%, 0.2);
+    --clr-grey-accentB-10: hsla(30, 60%, 50%, 0.1);
+}
+/* (6) 中性色-米白(#FAF7F2): */
+:root {
+    /* light shade */
+    --clr-neutralA-0: #f8f4ed;
+    --clr-neutralA-1: #f1e8da;
+    --clr-neutralA-2: #e2d2b6;
+    --clr-neutralA-3: #d4bb91;
+    --clr-neutralA-4: #c6a56c;
+    /* main color-米白 */
+    --clr-neutralA-5: #FAF7F2;
+    /* dark shade */
+    --clr-neutralA-6: #b88e47;
+    --clr-neutralA-7: #937239;
+    --clr-neutralA-8: #6e552b;
+    --clr-neutralA-9: #49391d;
+    --clr-neutralA-10: #251c0e;
+    --clr-neutralA-11: #1a140a;
+    /* greys */
+    --clr-grey-neutralA-1: hsla(38, 44%, 50%);
+    --clr-grey-neutralA-2: hsla(38, 44%, 50%, 0.9);
+    --clr-grey-neutralA-3: hsla(38, 44%, 50%, 0.8);
+    --clr-grey-neutralA-4: hsla(38, 44%, 50%, 0.7);
+    --clr-grey-neutralA-5: hsla(38, 44%, 50%, 0.6);
+    --clr-grey-neutralA-6: hsla(38, 44%, 50%, 0.5);
+    --clr-grey-neutralA-7: hsla(38, 44%, 50%, 0.4);
+    --clr-grey-neutralA-8: hsla(38, 44%, 50%, 0.3);
+    --clr-grey-neutralA-9: hsla(38, 44%, 50%, 0.2);
+    --clr-grey-neutralA-10: hsla(38, 44%, 50%, 0.1);
+}
+/* (7) 中性色-暖灰(#6B6B6B): */
+:root {
+      /* light shade */
+    --clr-neutralB-0: #f2f2f2;
+    --clr-neutralB-1: #e6e6e6;
+    --clr-neutralB-2: #cccccc;
+    --clr-neutralB-3: #B3B3B3;
+    --clr-neutralB-4: #999999;
+    /* main color-暖灰 */
+    --clr-neutralB-5: #6b6b6b;
+    /* dark shade */
+    --clr-neutralB-6: #808080;
+    --clr-neutralB-7: #666666;
+    --clr-neutralB-8: #4d4d4d;
+    --clr-neutralB-9: #333333;
+    --clr-neutralB-10: #1a1a1a;
+    --clr-neutralB-11: #121212;
+    /* greys */
+    --clr-grey-neutralB-1: hsla(0, 0%, 50%);
+    --clr-grey-neutralB-2: hsla(0, 0%, 50%, 0.9);
+    --clr-grey-neutralB-3: hsla(0, 0%, 50%, 0.8);
+    --clr-grey-neutralB-4: hsla(0, 0%, 50%, 0.7);
+    --clr-grey-neutralB-5: hsla(0, 0%, 50%, 0.6);
+    --clr-grey-neutralB-6: hsla(0, 0%, 50%, 0.5);
+    --clr-grey-neutralB-7: hsla(0, 0%, 50%, 0.4);
+    --clr-grey-neutralB-8: hsla(0, 0%, 50%, 0.3);
+    --clr-grey-neutralB-9: hsla(0, 0%, 50%, 0.2);
+    --clr-grey-neutralB-10: hsla(0, 0%, 50%, 0.1);
+}
+
+
+
