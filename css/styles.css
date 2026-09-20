@@ -18,7 +18,7 @@
     --clr-primary-9: #2a3c33;
     --clr-primary-10: #151e1a;
     --clr-primary-11: #0f1512;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-primary-1: hsla(150, 17%, 50%);
     --clr-grey-primary-2: hsla(150, 17%, 50%, 0.9);
     --clr-grey-primary-3: hsla(150, 17%, 50%, 0.8);
@@ -47,7 +47,7 @@
     --clr-secondary-9: #462020;
     --clr-secondary-10: #231010;
     --clr-secondary-11: #180b0b;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-secondary-1: hsla(0, 37%, 50%);
     --clr-grey-secondary-2: hsla(0, 37%, 50%, 0.9);
     --clr-grey-secondary-3: hsla(0, 37%, 50%, 0.8);
@@ -76,7 +76,7 @@
     --clr-contrast-9: #192f4d;
     --clr-contrast-10: #0c1727;
     --clr-contrast-11: #09101b;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-contrast-1: hsla(215, 51%, 50%);
     --clr-grey-contrast-2: hsla(215, 51%, 50%, 0.9);
     --clr-grey-contrast-3: hsla(215, 51%, 50%, 0.8);
@@ -105,7 +105,7 @@
     --clr-accentA-9: #253641;
     --clr-accentA-10: #121b21;
     --clr-accentA-11: #0d1317;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-accentA-1: hsla(204, 28%, 50%);
     --clr-grey-accentA-2: hsla(204, 28%, 50%, 0.9);
     --clr-grey-accentA-3: hsla(204, 28%, 50%, 0.8);
@@ -134,7 +134,7 @@
     --clr-accentB-9: #523314;
     --clr-accentB-10: #291a0a;
     --clr-accentB-11: #1d1207;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-accentB-1: hsla(30, 60%, 50%);
     --clr-grey-accentB-2: hsla(30, 60%, 50%, 0.9);
     --clr-grey-accentB-3: hsla(30, 60%, 50%, 0.8);
@@ -163,7 +163,7 @@
     --clr-neutralA-9: #49391d;
     --clr-neutralA-10: #251c0e;
     --clr-neutralA-11: #1a140a;
-    /* greys */
+    /* hsla for main color */
     --clr-grey-neutralA-1: hsla(38, 44%, 50%);
     --clr-grey-neutralA-2: hsla(38, 44%, 50%, 0.9);
     --clr-grey-neutralA-3: hsla(38, 44%, 50%, 0.8);
@@ -178,21 +178,21 @@
 /* (7) 中性色-暖灰(#6B6B6B): */
 :root {
       /* light shade */
-    --clr-neutralB-0: #f2f2f2;
-    --clr-neutralB-1: #e6e6e6;
-    --clr-neutralB-2: #cccccc;
-    --clr-neutralB-3: #B3B3B3;
-    --clr-neutralB-4: #999999;
+    --clr-neutralB-0: ;
+    --clr-neutralB-1: ;
+    --clr-neutralB-2: ;
+    --clr-neutralB-3: ;
+    --clr-neutralB-4: ;
     /* main color-暖灰 */
     --clr-neutralB-5: #6b6b6b;
     /* dark shade */
-    --clr-neutralB-6: #808080;
-    --clr-neutralB-7: #666666;
-    --clr-neutralB-8: #4d4d4d;
-    --clr-neutralB-9: #333333;
-    --clr-neutralB-10: #1a1a1a;
-    --clr-neutralB-11: #121212;
-    /* greys */
+    --clr-neutralB-6: ;
+    --clr-neutralB-7: ;
+    --clr-neutralB-8: ;
+    --clr-neutralB-9: ;
+    --clr-neutralB-10: ;
+    --clr-neutralB-11: ;
+    /* hsla for main color */
     --clr-grey-neutralB-1: hsla(0, 0%, 50%);
     --clr-grey-neutralB-2: hsla(0, 0%, 50%, 0.9);
     --clr-grey-neutralB-3: hsla(0, 0%, 50%, 0.8);
