@@ -177,21 +177,8 @@
 }
 /* (7) 中性色-暖灰(#6B6B6B): */
 :root {
-      /* light shade */
-    --clr-neutralB-0: ;
-    --clr-neutralB-1: ;
-    --clr-neutralB-2: ;
-    --clr-neutralB-3: ;
-    --clr-neutralB-4: ;
     /* main color-暖灰 */
     --clr-neutralB-5: #6b6b6b;
-    /* dark shade */
-    --clr-neutralB-6: ;
-    --clr-neutralB-7: ;
-    --clr-neutralB-8: ;
-    --clr-neutralB-9: ;
-    --clr-neutralB-10: ;
-    --clr-neutralB-11: ;
     /* hsla for main color */
     --clr-grey-neutralB-1: hsla(0, 0%, 50%);
     --clr-grey-neutralB-2: hsla(0, 0%, 50%, 0.9);
@@ -204,6 +191,179 @@
     --clr-grey-neutralB-9: hsla(0, 0%, 50%, 0.2);
     --clr-grey-neutralB-10: hsla(0, 0%, 50%, 0.1);
 }
+/* ============================== */
+/* end of global variables: colors */
+/* ============================= */
 
+/* ============================== */
+/* from fe6/burger/styles.css */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav_height: 80px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* come back later */
+}
+
+a {
+    text-decoration: none;
+    /* color: #333; */
+    color: var(--clr-contrast-11);
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar {
+    /* background: lightblue; */
+    background: var(--clr-neutralA-5);
+    padding: 1rem 2rem;
+    height: 80px;
+}
+
+.logo {
+        width: 50px;
+    }
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar a:hover {
+    /* color: blue; */
+    color: var(--clr-secondary-5);
+}
+/* mobile menu */
+.navbar .mobile-menu-items {
+    position: absolute;
+    top: var(--nav_height);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background: white; */
+    background: var(--clr-neutralA-5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.navbar .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 100px;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar .mobile-menu-toggle {
+    cursor: pointer;
+}
+
+.navbar .mobile-menu-items.active {
+    transform: translateX(0);
+}
+
+.navbar .mobile-menu {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .mobile-menu {
+        display: block;
+    }
+}
+/* ============================== */
+/* end of from fe6/burger/styles.css */
+/* ============================= */
+
+/* ============================== */
+/* indicate current location */
+/* ============================= */
+/* Active nav item */
+.navbar .main-menu-list li a.active,
+.navbar .mobile-menu-list li a.active {
+    background-color: var(--clr-contrast-11);
+    color: var(--clr-neutralA-5);
+}
+/* ============================== */
+/* end of indicate current location */
+/* ============================= */
+
+/* ============================== */
+/* handle submenu */
+/* ============================= */
+/* Submenu hidden by default */
+.navbar .submenu {
+    display: none;
+    position: absolute; /* for desktop dropdown */
+    /* background: white; */
+    background: var(--clr-neutralA-5);
+    padding: 0.5rem 1rem;
+    list-style: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Show submenu when parent has .open */
+.navbar .has-submenu.open > .submenu {
+    display: block;
+}
+
+/* Submenu items */
+.navbar .submenu li a {
+    display: block;
+    padding: 0.5rem;
+    /* color: #333; */
+    color: var(--clr-contrast-11);
+}
+
+.navbar .submenu li a:hover {
+    /* background: black; */
+    background: var(--clr-contrast-11);
+    /* color: white; */
+    color: var(--clr-neutralA-5);
+}
+
+/* ============================== */
+/* end of handle submenu */
+/* ============================= */
 
 
