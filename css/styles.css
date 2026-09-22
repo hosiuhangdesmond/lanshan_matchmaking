@@ -215,7 +215,6 @@ body {
 
 a {
     text-decoration: none;
-    /* color: #333; */
     color: var(--clr-contrast-11);
 }
 
@@ -236,7 +235,6 @@ img {
 }
 
 .navbar {
-    /* background: lightblue; */
     background: var(--clr-neutralA-5);
     padding: 1rem 2rem;
     height: 80px;
@@ -259,7 +257,6 @@ img {
 }
 
 .navbar a:hover {
-    /* color: blue; */
     color: var(--clr-secondary-5);
 }
 /* mobile menu */
@@ -269,7 +266,6 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* background: white; */
     background: var(--clr-neutralA-5);
     text-align: center;
     transition: transform 0.3s ease;
@@ -320,9 +316,11 @@ img {
 /* ============================= */
 /* Active nav item */
 .navbar .main-menu-list li a.active,
-.navbar .mobile-menu-list li a.active {
-    background-color: var(--clr-contrast-11);
-    color: var(--clr-neutralA-5);
+.navbar .mobile-menu-list li a.active,
+.footer .footer-menu-list li a.active {
+    /* background-color: var(--clr-contrast-11); */
+    /* color: var(--clr-neutralA-5); */
+    text-decoration: underline;
 }
 /* ============================== */
 /* end of indicate current location */
@@ -335,14 +333,18 @@ img {
 .navbar .submenu {
     display: none;
     position: absolute; /* for desktop dropdown */
-    /* background: white; */
     background: var(--clr-neutralA-5);
     padding: 0.5rem 1rem;
     list-style: none;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Show submenu when parent has .open */
+/* Show submenu on hover (desktop/mouse) */
+.navbar .has-submenu:hover > .submenu {
+    display: block;
+}
+
+/* show submenu when .open is toggled (mobile/touch) */
 .navbar .has-submenu.open > .submenu {
     display: block;
 }
@@ -351,19 +353,53 @@ img {
 .navbar .submenu li a {
     display: block;
     padding: 0.5rem;
-    /* color: #333; */
     color: var(--clr-contrast-11);
 }
 
 .navbar .submenu li a:hover {
-    /* background: black; */
     background: var(--clr-contrast-11);
-    /* color: white; */
     color: var(--clr-neutralA-5);
 }
 
 /* ============================== */
 /* end of handle submenu */
 /* ============================= */
+
+/* ============================== */
+/* handle footer */
+/* ============================= */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-menu-list {
+    display: flex;
+    /* gap: 1.5rem; */
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+@media (max-width: 768px) {
+    .footer-flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+.footer .footer-menu-list a:hover,
+.footer .footer-menu-list a:focus {
+    color: var(--clr-contrast-11);
+    text-decoration: underline;
+}
+
+/* ============================== */
+/* end of handle footer */
+/* ============================= */
+
 
 
