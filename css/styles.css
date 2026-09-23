@@ -401,5 +401,46 @@ img {
 /* end of handle footer */
 /* ============================= */
 
+/* ============================== */
+/* define a reusable grid container */
+/* ============================= */
+.body-container {
+    display: grid;
+    gap: 1rem; /* spacing between items */
+    padding: 1rem;
+}
+
+/* ============================== */
+/* end of define a reusable grid container */
+/* ============================= */
+
+/* ============================== */
+/* pattern-I */
+/* ============================= */
+.pattern-I {
+    grid-template-columns: 1fr 1fr;
+}
+
+.pattern-I .box {
+    background: var(--clr-neutralA-5);
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .pattern-I {
+        grid-template-columns: 1fr; /* stack on mobile */
+    }
+}
+
+/* completely hide all <p> elements whenever the hamburger icon is clicked */
+.hidden-content {
+    display: none;
+}
+
+
+/* ============================== */
+/* end of pattern-I */
+/* ============================= */
 
 
