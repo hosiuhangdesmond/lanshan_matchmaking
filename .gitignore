@@ -207,6 +207,6 @@ dist
 
 ### others ###
 
-/img
-/audio
-/video
+# /img
+# /audio
+# /video
