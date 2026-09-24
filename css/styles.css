@@ -438,6 +438,15 @@ img {
     display: none;
 }
 
+.enneagram {
+    color: blue;
+    text-decoration: underline;
+}
+
+.box-e05_00 {
+    justify-self: center;
+    align-self: start;
+}
 
 /* ============================== */
 /* end of pattern-I */

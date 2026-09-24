@@ -5,11 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.querySelector('.navbar .mobile-menu-toggle');
     const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
     const paragraphs = document.querySelectorAll('p');
+    const heads = document.querySelectorAll('h1');
 
     toggleButton.addEventListener('click', ()=> {
         mobileMenu.classList.toggle('active');
         // completely hide all <p> elements whenever the hamburger icon is clicked
         paragraphs.forEach(p => p.classList.toggle('hidden-content'));
+        heads.forEach(h1 => h1.classList.toggle('hidden-content'));
     })
 })
 /* ============================== */
