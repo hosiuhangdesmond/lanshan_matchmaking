@@ -6,12 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
     const paragraphs = document.querySelectorAll('p');
     const heads = document.querySelectorAll('h1');
+    const footers = document.querySelectorAll('footer');
+    const imgs = document.querySelectorAll('img');
 
     toggleButton.addEventListener('click', ()=> {
         mobileMenu.classList.toggle('active');
         // completely hide all <p> elements whenever the hamburger icon is clicked
         paragraphs.forEach(p => p.classList.toggle('hidden-content'));
         heads.forEach(h1 => h1.classList.toggle('hidden-content'));
+        footers.forEach(footer => footer.classList.toggle('hidden-content'));
+        imgs.forEach(img => img.classList.toggle('hidden-content'));
     })
 })
 /* ============================== */

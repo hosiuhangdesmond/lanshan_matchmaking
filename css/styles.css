@@ -210,7 +210,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* come back later */
+    background-color: var(--clr-neutralA-5);
 }
 
 a {
@@ -410,6 +410,26 @@ img {
     padding: 1rem;
 }
 
+/* completely hide all <p>, <h1>, <footer>, <img> elements whenever the hamburger icon is clicked */
+.hidden-content {
+    display: none;
+}
+
+strong {
+    color: blue;
+    text-decoration: underline;
+}
+
+.company {
+    color: var(--clr-secondary-6);
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--clr-secondary-6);
+}
+
+
 /* ============================== */
 /* end of define a reusable grid container */
 /* ============================= */
@@ -433,12 +453,7 @@ img {
     }
 }
 
-/* completely hide all <p> elements whenever the hamburger icon is clicked */
-.hidden-content {
-    display: none;
-}
-
-.enneagram {
+.enneagram, .newsletter {
     color: blue;
     text-decoration: underline;
 }
@@ -446,6 +461,21 @@ img {
 .box-e05_00 {
     justify-self: center;
     align-self: start;
+}
+
+.box-e05_02 {
+    justify-self: left;
+    align-self: center;
+    color: blue;
+}
+
+.pattern-I li a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.song-ci {
+    color: var(--clr-primary-5);
 }
 
 /* ============================== */
