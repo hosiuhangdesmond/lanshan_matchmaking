@@ -46,3 +46,23 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ============================== */
 /* end of show submenu E2, E3, E4 */
 /* ============================= */
+
+/* ============================== */
+/* handle submit button in e05_01 */
+/* ============================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+const form = document.querySelector('.questionnaire');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert("性格測試已完成!");
+});
+});
+
+/* ============================== */
+/* end of handle submit button in e05_01 */
+/* ============================= */
+
+
+
+

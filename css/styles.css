@@ -495,6 +495,10 @@ h1 {
     list-style: disc;
 }
 
+.pattern-II .e12 li {
+    list-style: none;
+}
+
 .pattern-II .e14 li {
     list-style: none;
 }
@@ -512,9 +516,36 @@ h1 {
     text-decoration: underline;
 }
 
-
 /* ============================== */
 /* end of pattern-II */
 /* ============================= */
 
+/* ============================== */
+/* pattern-III */
+/* ============================= */
 
+.pattern-III {
+    grid-template-columns: 1fr;
+}
+
+.questionnaire {
+    display: grid;
+    gap: 1rem;
+}
+
+.question p {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 1.5rem;
+}
+
+.pattern-III .submit {
+    width: 30%;
+    color: var(--clr-secondary-6);
+    font-size: 3rem;
+    background-color: var(--clr-primary-1);
+}
+
+/* ============================== */
+/* end of pattern-III */
+/* ============================= */
