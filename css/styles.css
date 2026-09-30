@@ -553,3 +553,49 @@ h1 {
 /* ============================== */
 /* end of pattern-III */
 /* ============================= */
+
+/* ============================== */
+/* pattern-IV */
+/* ============================= */
+
+.pattern-IV {
+    grid-template-rows: auto auto;
+}
+
+.pattern-IV .upper {
+    grid-column: 1 / -1;
+}
+
+.pattern-IV .lower {
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-auto-rows: auto; */
+    gap: 1rem;
+}
+
+.pattern-IV .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+/* @media (max-width: 768px) {
+    .pattern-IV .lower {
+        grid-template-columns: 1fr;
+    }
+} */
+
+@media (max-width: 768px) {
+    .pattern-IV .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pattern-IV .e11 {
+    color: var(--clr-secondary-6);
+}
+
+/* ============================== */
+/* end of pattern-IV */
+/* ============================= */
+
