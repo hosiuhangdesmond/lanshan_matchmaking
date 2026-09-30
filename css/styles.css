@@ -546,6 +546,10 @@ h1 {
     background-color: var(--clr-primary-1);
 }
 
+.pattern-III #e05_01 {
+    color: var(--clr-primary-5);
+}
+
 /* ============================== */
 /* end of pattern-III */
 /* ============================= */
