@@ -68,7 +68,97 @@
         </div>
         </div>
     </nav>
-    <h1>會員登入</h1><br>
+
+    <section class="body-container pattern-III e08_00">
+        <!-- ====================== original display ======================== -->
+        <main class="home-buttons">
+            <button type="button" class="btn btn-primary" id="openLoginBtn">
+            現有會員登入
+            </button>
+            <button type="button" class="btn btn-primary" id="openRegisterBtn">
+            登記成為新會員
+            </button>
+        </main>
+
+        <!-- ===================== Modal A: member login ===================== -->
+        <dialog id="loginDialog" class="modal" aria-labelledby="loginTitle">
+            <div class="modal-content">
+                <h2 id="loginTitle">現有會員登入</h2>
+
+                <form id="loginForm" novalidate>
+                    <div class="field">
+                        <label for="loginId">已登記電郵地址或已登記電話號碼</label>
+                        <input type="text" id="loginId" name="loginId"
+                        autocomplete="username" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="loginPassword">密碼</label>
+                        <input type="password" id="loginPassword" name="password"
+                        autocomplete="current-password" required>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn btn-primary">提交</button>
+                        <button type="button" class="btn btn-secondary" id="clearLoginBtn">清除</button>
+                        <button type="button" class="btn btn-secondary" id="cancelLoginBtn">取消</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+
+        <!-- ================= Modal B: new member registration================= -->
+        <dialog id="registerDialog" class="modal" aria-labelledby="registerTitle">
+            <div class="modal-content">
+                <h2 id="registerTitle">登記成為新會員</h2>
+
+                <form id="registerForm" novalidate>
+                    <div class="field">
+                        <label for="regEmail">電郵地址</label>
+                        <input type="email" id="regEmail" name="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="regPhone">電話號碼</label>
+                        <input type="tel" id="regPhone" name="phone" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="regNameZh">中文名字</label>
+                        <input type="text" id="regNameZh" name="nameZh" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="regNameEn">英文名字</label>
+                        <input type="text" id="regNameEn" name="nameEn" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="regPassword">設定密碼</label>
+                    <input type="password" id="regPassword" name="password" required>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn btn-primary">提交</button>
+                        <button type="button" class="btn btn-secondary" id="clearRegisterBtn">清除</button>
+                        <button type="button" class="btn btn-secondary" id="cancelRegisterBtn">取消</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+
+        <!-- ===================== Success dialog ===================== -->
+        <dialog id="successDialog" class="modal modal-small" aria-labelledby="successTitle">
+            <div class="modal-content">
+                <h2 id="successTitle">提示</h2>
+                <p id="successMessage" class="success-message"></p>
+                <div class="actions actions-single">
+                <button type="button" class="btn btn-primary" id="successOkBtn">確定</button>
+                </div>
+            </div>
+        </dialog>
+    </section>
+
     <footer class="footer">
         <div class="footer-flex">
             <small>闌珊相親及婚姻家庭服務有限公司版權所有 © 2026</small>
